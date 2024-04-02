@@ -275,7 +275,7 @@ button {
 .banner_section {
     width: 100%;
     float: left;
-    background-image: url(../images/banner-bg.jpeg);
+    background-color: white;
     height: auto;
     background-size: 100%;
     padding: 10px 0px 25px 0px;
@@ -300,7 +300,7 @@ button {
     width: 100%;
     float: left;
     font-size: 70px;
-    color: #fdfcfa;
+    color: #000;
     font-weight: bold;
     padding-bottom: 0px;
 }
@@ -309,7 +309,7 @@ button {
     width: 50%;
     float: left;
     font-size: 16px;
-    color: #fff;
+    color: #000;
     margin: 0px;
     padding-bottom: 30px;
 }

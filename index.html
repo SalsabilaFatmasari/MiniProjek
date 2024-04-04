@@ -36,6 +36,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
       media="screen"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
     <!--header section start -->
@@ -61,8 +62,16 @@
               <li class="nav-item active">
                 <a class="nav-link" href="index.html">Dashboard</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="product.html">Produk</a>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Produk
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="semua_menu.html">Semua Menu</a>
+                      <a class="dropdown-item" href="makanan.html">Makanan</a>
+                      <a class="dropdown-item" href="minuman.html">Minuman</a>
+                      <a class="dropdown-item" href="snack.html">Snack</a>
+                  </div>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="about.html">Tentang Kami</a>
@@ -245,13 +254,20 @@
                     <div class="testimonial_section_2">
                       <h4 class="client_name_text">
                         Fulan
-                        <span class="quick_icon"
-                          ><img src="images/quick-icon.png"
-                        /></span>
+                        <span class="quick_icon">
+                          <img src="images/quick-icon.png" />
+                        </span>
                       </h4>
-                      <p class="customer_text">
-                        Ini adalah tempat yang luar biasa untuk menikmati mie ayam yang lezat! Rasanya benar-benar mengingatkan saya akan cita rasa rumah. Selalu puas dengan pelayanan yang ramah dan cepat. Terima kasih Savoury Noodless untuk pengalaman makan yang menyenangkan setiap kali saya berkunjung!
-                      </p>
+                      <div class="row"> <!-- Add this row for your image and text -->
+                        <div class="col-md-4 d-flex justify-content-center align-items-center" style="min-height: 200px;"> <!-- Use d-flex, justify-content-center, and align-items-center to center the image -->
+                          <img src="images/img-10.jpg" alt="Savoury Noodles" style="width: 100%; max-width: 200px; height: auto;">
+                        </div>
+                        <div class="col-md-8">
+                          <p class="customer_text">
+                            Ini adalah tempat yang luar biasa untuk menikmati mie ayam yang lezat! Rasanya benar-benar mengingatkan saya akan cita rasa rumah. Selalu puas dengan pelayanan yang ramah dan cepat. Terima kasih Savoury Noodless untuk pengalaman makan yang menyenangkan setiap kali saya berkunjung!
+                          </p>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -259,47 +275,61 @@
             </div>
           </div>
           <div class="carousel-item">
-            <div class="client_section_2">
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-12">
-                    <div class="testimonial_section_2">
-                      <h4 class="client_name_text">
-                        Fulan
-                        <span class="quick_icon"
-                          ><img src="images/quick-icon.png"
-                        /></span>
-                      </h4>
-                      <p class="customer_text">
-                        Ini adalah tempat yang luar biasa untuk menikmati mie ayam yang lezat! Rasanya benar-benar mengingatkan saya akan cita rasa rumah. Selalu puas dengan pelayanan yang ramah dan cepat. Terima kasih Savoury Noodless untuk pengalaman makan yang menyenangkan setiap kali saya berkunjung!
-                      </p>
+                      <div class="client_section_2">
+                        <div class="container">
+                          <div class="row">
+                            <div class="col-md-12">
+                              <div class="testimonial_section_2">
+                                <h4 class="client_name_text">
+                                  Fulan
+                                  <span class="quick_icon">
+                                    <img src="images/quick-icon.png" />
+                                  </span>
+                                </h4>
+                                <div class="row"> <!-- Add this row for your image and text -->
+                                  <div class="col-md-4 d-flex justify-content-center align-items-center" style="min-height: 200px;"> <!-- Use d-flex, justify-content-center, and align-items-center to center the image -->
+                                    <img src="images/img-10.jpg" alt="Savoury Noodles" style="width: 100%; max-width: 200px; height: auto;">
+                                  </div>
+                                  <div class="col-md-8">
+                                    <p class="customer_text">
+                                      Ini adalah tempat yang luar biasa untuk menikmati mie ayam yang lezat! Rasanya benar-benar mengingatkan saya akan cita rasa rumah. Selalu puas dengan pelayanan yang ramah dan cepat. Terima kasih Savoury Noodless untuk pengalaman makan yang menyenangkan setiap kali saya berkunjung!
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
           <div class="carousel-item">
-            <div class="client_section_2">
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-12">
-                    <div class="testimonial_section_2">
-                      <h4 class="client_name_text">
-                        Fulan
-                        <span class="quick_icon"
-                          ><img src="images/quick-icon.png"
-                        /></span>
-                      </h4>
-                      <p class="customer_text">
-                        Ini adalah tempat yang luar biasa untuk menikmati mie ayam yang lezat! Rasanya benar-benar mengingatkan saya akan cita rasa rumah. Selalu puas dengan pelayanan yang ramah dan cepat. Terima kasih Savoury Noodless untuk pengalaman makan yang menyenangkan setiap kali saya berkunjung!
-                      </p>
+                      <div class="client_section_2">
+                        <div class="container">
+                          <div class="row">
+                            <div class="col-md-12">
+                              <div class="testimonial_section_2">
+                                <h4 class="client_name_text">
+                                  Fulan
+                                  <span class="quick_icon">
+                                    <img src="images/quick-icon.png" />
+                                  </span>
+                                </h4>
+                                <div class="row"> <!-- Add this row for your image and text -->
+                                  <div class="col-md-4 d-flex justify-content-center align-items-center" style="min-height: 200px;"> <!-- Use d-flex, justify-content-center, and align-items-center to center the image -->
+                                    <img src="images/img-10.jpg" alt="Savoury Noodles" style="width: 100%; max-width: 200px; height: auto;">
+                                  </div>
+                                  <div class="col-md-8">
+                                    <p class="customer_text">
+                                      Ini adalah tempat yang luar biasa untuk menikmati mie ayam yang lezat! Rasanya benar-benar mengingatkan saya akan cita rasa rumah. Selalu puas dengan pelayanan yang ramah dan cepat. Terima kasih Savoury Noodless untuk pengalaman makan yang menyenangkan setiap kali saya berkunjung!
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -316,43 +346,73 @@
           <div class="col-md-6 padding_0">
             <div class="mail_section">
               <div class="email_text">
+                <h1 style="text-align: center; color: #f76d37">
+                  Send Your Message
+                </h1>
                 <div class="form-group">
                   <input
                     type="text"
                     class="email-bt"
-                    placeholder="Nama"
-                    name="Email"
+                    placeholder="Name"
+                    id="name"
+                    required
                   />
                 </div>
                 <div class="form-group">
                   <input
-                    type="text"
+                    type="email"
                     class="email-bt"
                     placeholder="Email"
-                    name="Email"
+                    id="email"
+                    required
                   />
                 </div>
                 <div class="form-group">
                   <input
                     type="text"
                     class="email-bt"
-                    placeholder="Nomor Handphone"
-                    name="Email"
+                    placeholder="Phone Number"
+                    id="phone"
                   />
                 </div>
                 <div class="form-group">
                   <textarea
                     class="massage-bt"
-                    placeholder="Pesan"
+                    placeholder="Message"
                     rows="5"
-                    id="comment"
-                    name="Massage"
+                    id="message"
+                    required
                   ></textarea>
                 </div>
                 <div class="send_btn">
-                  <div type="text" class="main_bt"><a href="#">Kirim</a></div>
+                  <div class="main_bt">
+                    <button id="sendButton">SEND</button>
+                  </div>
                 </div>
               </div>
+              <script>
+                $(document).ready(function () {
+                  $("#sendButton").click(function () {
+                    var name = $("#name").val();
+                    var email = $("#email").val();
+                    var phone = $("#phone").val();
+                    var message = $("#message").val();
+
+                    // Menampilkan data dalam popup
+                    var popupMessage =
+                      "Name: " +
+                      name +
+                      "\nEmail: " +
+                      email +
+                      "\nPhone: " +
+                      phone +
+                      "\nMessage: " +
+                      message +
+                      "\nPesan telah terkirim!";
+                    alert(popupMessage);
+                  });
+                });
+              </script>
             </div>
           </div>
           <div class="col-md-6 padding_0">

@@ -36,6 +36,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
       media="screen"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
     <!--header section start -->
@@ -61,8 +62,16 @@
               <li class="nav-item">
                 <a class="nav-link" href="index.html">Dashboard</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="product.html">Produk</a>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Produk
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="semua_menu.html">Semua Menu</a>
+                      <a class="dropdown-item" href="makanan.html">Makanan</a>
+                      <a class="dropdown-item" href="minuman.html">Minuman</a>
+                      <a class="dropdown-item" href="snack.html">Snack</a>
+                  </div>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="about.html">Tentang Kami</a>
@@ -87,13 +96,12 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-12">
-            <h1 class="gallery_taital">Daftar Menu</h1>
+            <h1 class="gallery_taital">Daftar Makanan</h1>
           </div>
         </div>
         <div class="">
           <div class="gallery_section_2">
             <div class="row">
-              <h1 class="gallery_text">Makanan</h1>
               <div class="col-md-3">
                 <div class="card">
                   <img
@@ -289,97 +297,19 @@
                 </div>
               </div>
             </div>
-
-            <div class="row">
-              <h1 class="gallery_text">Snack</h1>
-              <div class="col-md-3">
-                <div class="card">
-                  <img
-                    src="images/img-23.jpg"
-                    class="card-img-top"
-                    alt="Image 1"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-text font-weight-bold">Sempol</h5>
-                    <h5 class="card-text" style="font-weight: normal">
-                      Harga: 10.000
-                    </h5>
-                  </div>
-                </div>
-              </div>
-              </div>
             </div>
-
-            <div class="row">
-              <h1 class="gallery_text">Minuman</h1>
-              <div class="col-md-3">
-                <div class="card">
-                  <img
-                    src="images/img-23.jpg"
-                    class="card-img-top"
-                    alt="Image 1"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-text font-weight-bold">Es Teh Manis</h5>
-                    <h5 class="card-text" style="font-weight: normal">
-                      Harga: 5.000
-                    </h5>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="card">
-                  <img
-                    src="images/img-26.jpg"
-                    class="card-img-top"
-                    alt="Image 2"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-text font-weight-bold">Lemon Tea</h5>
-                    <h5 class="card-text" style="font-weight: normal">
-                      Harga: 7.000
-                    </h5>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="card">
-                  <img
-                    src="images/img-24.jpg"
-                    class="card-img-top"
-                    alt="Image 1"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-text font-weight-bold">Es Jeruk</h5>
-                    <h5 class="card-text" style="font-weight: normal">
-                      Harga: 5.000
-                    </h5>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-3">
-                <div class="card">
-                  <img
-                    src="images/img-25.jpg"
-                    class="card-img-top"
-                    alt="Image 2"
-                  />
-                  <div class="card-body">
-                    <h5 class="card-text font-weight-bold">Es Cappucino</h5>
-                    <h5 class="card-text" style="font-weight: normal">
-                      Harga: 10.000
-                    </h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            
-          </div>
-        </div>
-        <div class="seemore_bt" style="padding-bottom: 50px">
-          <a href="#">See More</a>
-        </div>
+       <div class="seemore_bt" style="padding-bottom: 50px">
+          <a href="#" id="seeMoreButton">See More</a>
+       </div>
+      <script>
+        $(document).ready(function() {
+            $('#seeMoreButton').click(function(event) {
+                event.preventDefault();
+                alert("Anda akan dialihkan ke WhatsApp");
+                window.location.href = 'https://wa.me/628813732929';
+            });
+        });
+        </script>
       </div>
     </div>
     <!-- gallery section end -->

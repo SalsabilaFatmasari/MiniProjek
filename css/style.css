@@ -374,6 +374,38 @@ button {
 /* banner section end */
 
 /* about section start */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* Total kolom adalah 12, ini adalah setengah lebar */
+  grid-auto-rows: minmax(100px, auto); /* Setting tinggi minimum dan maksimum untuk setiap baris */
+  grid-gap: 5px; /* Tidak ada jarak antar grid item */
+}
+
+.item img {
+  width: 100%; /* Gambar akan mengisi lebar grid item */
+  height: 300px; /* Gambar akan mengisi tinggi grid item */
+  object-fit: cover; /* Memastikan gambar dipotong atau diperbesar sesuai proporsi grid item */
+}
+
+/* Aturan untuk mengatur ukuran grid item sesuai dengan gambar tertentu */
+.item:nth-child(1),
+.item:nth-child(6) {
+  grid-column: span 6; /* Gambar 1, 3, 7 akan mengisi 6 kolom */
+}
+
+.item:nth-child(2),
+.item:nth-child(5),
+.item:nth-child(7)
+.item:nth-child(8) 
+.item:nth-child(9)  {
+  grid-column: span 4; /* Gambar 2, 4, 6 akan mengisi 4 kolom */
+}
+
+.item:nth-child(3),
+.item:nth-child(4) {
+  grid-column: span 2; /* Gambar 8, 9, 11 akan mengisi 4 kolom */
+}
+
 
 .about_section {
     width: 100%;
@@ -853,7 +885,7 @@ a:hover {
     float: left;
     background-image: url(../images/img-9.png);
     height: auto;
-    padding: 23px 70px;
+    padding: 50px 70px;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -864,63 +896,54 @@ a:hover {
     font-size: 16px;
     text-align: center;
     color: #b2afaf;
-    padding-top: 30px;
     display: flex;
 }
 
-.email_text {
-    width: 100%;
-    float: left;
-    margin-top: 20px;
-}
+ .email_text {
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 40px;
+    }
 
-.email-bt {
-    color: #080707;
-    width: 100%;
-    height: 55px;
-    font-size: 20px;
-    padding: 20px 40px;
-    border: 2px;
-    border-radius: 30px;
-}
+    .form-group {
+        margin-bottom: 15px;
+    }
 
-.massage-bt {
-    color: #080707;
-    width: 100%;
-    height: 150px;
-    font-size: 20px;
-    padding: 40px;
-    border: 0px;
-    border-radius: 50px;
-}
+    .email-bt,
+    .massage-bt {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 40px;
+        box-sizing: border-box; /* Memastikan padding tidak menambah lebar elemen */
+    }
 
-.send_btn {
-    width: 170px;
-    margin: 0 auto;
-    text-align: center;
-}
+    .email-bt:focus,
+    .massage-bt:focus {
+        outline: none; /* Menghilangkan outline default */
+        border-color: #f76d37; /* Mengubah warna border ketika input aktif */
+        box-shadow: 0 0 5px rgba(247, 109, 55, 0.5); /* Menambahkan efek bayangan pada input aktif */
+    }
 
-.main_bt a {
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 16px;
-    color: #ffffff;
-    background-color: #d33a11;
-    padding: 15px 50px 12px 50px;
-    border-radius: 30px;
-    display: block;
-}
+    .send_btn {
+        text-align: center;
+    }
 
-.main_bt a {
-    color: #ffffff;
-    background-color: #d33a11;
-}
+    .main_bt button {
+        padding: 10px 20px;
+        font-size: 18px;
+        color: #fff;
+        background-color: #f76d37;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
 
-.main_bt a:hover {
-    color: #323131;
-    background-color: #ffffff;
-}
+    .main_bt button:hover {
+        background-color: #252525;
+    }
 
 .padding_0 {
     padding: 0px;

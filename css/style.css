@@ -225,6 +225,15 @@ button {
     background-size: 100%;
 }
 
+.header_home {
+    width: 100%;
+    float: left;
+    text-align: center;
+    font-size: 80px;
+    color: #f76d37;
+    font-weight: bold;
+}
+
 .bg-light {
     background-color: transparent !important;
 }
@@ -415,7 +424,7 @@ button {
 .about_taital_main {
     width: 100%;
     float: left;
-    padding: 120px 0px;
+    padding: 30px 0px;
 }
 
 .about_taital {
@@ -434,6 +443,8 @@ button {
     color: #4c4c4b;
     margin: 0px;
     padding-top: 10px;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .about_text {
@@ -443,6 +454,8 @@ button {
     color: #4c4c4b;
     margin: 0px;
     padding-top: 10px;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .read_bt {
@@ -885,7 +898,7 @@ a:hover {
     float: left;
     background-image: url(../images/img-9.png);
     height: auto;
-    padding: 50px 70px;
+    padding: 7px 70px;
     background-repeat: no-repeat;
     background-size: cover;
 }
